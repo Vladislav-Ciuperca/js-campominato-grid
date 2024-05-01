@@ -7,3 +7,13 @@ function createSquare(numero) {
     newElement.classList.add("square");
     return newElement;
 }
+// creo un ciclo for che conta da 1 a 100
+
+for (let i = 0; i < 100; i++) {
+    // richiamo la funzione sopra creata
+    const newSquare = createSquare(i + 1)
+    console.log(newSquare, i)
+    // appendo il "<div>" dentro al container per 100 volte
+    container.appendChild(newSquare)
+    // creo un event listener collegato a newsquare
+}

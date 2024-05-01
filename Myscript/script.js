@@ -8,16 +8,20 @@ function createSquare(numero) {
     return newElement;
 }
 // creo un ciclo for che conta da 1 a 100
+function genera() {
 
-for (let i = 0; i < 100; i++) {
-    // richiamo la funzione sopra creata
-    const newSquare = createSquare(i + 1)
-    console.log(newSquare, i)
-    // appendo il "<div>" dentro al container per 100 volte
-    container.appendChild(newSquare)
+    for (let i = 0; i < 100; i++) {
+        // richiamo la funzione sopra creata
+        const newSquare = createSquare(i + 1)
+        console.log(newSquare, i)
+        // appendo il "<div>" dentro al container per 100 volte
+        container.appendChild(newSquare)
 
-    // creo un event listener collegato a newsquare
-    newSquare.addEventListener("click", function () {
-        newSquare.classList.add("clicked")
-    })
+        // creo un event listener collegato a newsquare
+        newSquare.addEventListener("click", function () {
+            newSquare.classList.add("clicked")
+            alert(i + 1)
+        })
+    }
+
 }

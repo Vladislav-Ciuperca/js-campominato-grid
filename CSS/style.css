@@ -20,15 +20,17 @@ input {
     flex-wrap: wrap;
 }
 
-#container div {
+.square {
     border: 2px dashed green;
     width: calc(100% / 10);
     aspect-ratio: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
-.bgblue {
+.clicked {
     background: cyan;
+    color: black;
 }

@@ -18,6 +18,6 @@ for (let i = 0; i < 100; i++) {
 
     // creo un event listener collegato a newsquare
     newSquare.addEventListener("click", function () {
-        newSquare.classList.add("bgblue")
+        newSquare.classList.add("clicked")
     })
 }

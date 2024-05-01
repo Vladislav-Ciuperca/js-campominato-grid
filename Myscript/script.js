@@ -15,5 +15,9 @@ for (let i = 0; i < 100; i++) {
     console.log(newSquare, i)
     // appendo il "<div>" dentro al container per 100 volte
     container.appendChild(newSquare)
+
     // creo un event listener collegato a newsquare
+    newSquare.addEventListener("click", function () {
+        newSquare.classList.add("bgblue")
+    })
 }
